@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Thank You!</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #F2F2F2;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .message-container {
+        background-color: #FFFFFF;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      .link-back {
+        text-align: center;
+        margin-top: 30px;
+      }
+      .link-back a {
+        color: #FF5C5C;
+        text-decoration: none;
+      }
+      .link-back a:hover {
+        text-decoration: underline;
+      }
+	  .typing-animation {
+      display: inline-block;
+      overflow: hidden;
+      animation: typing 3s steps(10, end) 1s forwards;
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    </style>
+	<script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const titleElement = document.querySelector('h1');
+
+      // Create a typing effect by replacing the text content
+      const originalText = titleElement.textContent;
+      const newText = "Thank You!";
+      titleElement.textContent = ""; // Clear the existing text
+
+      // Iterate through the characters and simulate typing effect
+      for (let i = 0; i < newText.length; i++) {
+        setTimeout(() => {
+          titleElement.textContent += newText[i];
+        }, i * 100); // Adjust the delay (in milliseconds) for the desired typing speed
+      }
+    });
+  </script>
+  </head>
+  <body>
+    <h1>Thank You!</h1>
+    <div class="message-container">
+      <p>Thank you for submitting the form. Your information has been received.</p>
+      <p>We appreciate your participation!</p>
+      <div class="link-back">
+        <a href="index.html">Back to Form</a>
+      </div>
+    </div>
+  </body>
+</html>
