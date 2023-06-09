@@ -52,6 +52,27 @@
       input[type="submit"]:hover {
         background-color: #FF7878;
       }
+	    .upperDirectory, .lowerDirectory {
+  text-align: center;
+  letter-spacing: 5px;
+}
+h3 {
+  margin-top: 8px;
+  color: rgb(160, 64, 0);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(171, 80, 243);
+}
+.fa {
+  width: 100px;
+  color: rgb(144, 234, 234);
+}
+
+.w3-xxlarge {
+  display: inline-block;
+}
     </style>
 	 <script>
       function submitForm(event) {
@@ -75,7 +96,11 @@
     </script>
   </head>
   <body>
-	  <a href="https://jehumamac.github.io/homepagenew/"><i class="fa fa-home" title="Home"></i></a> 
+	<div class="upperDirectory">
+          <div class="w3-xxlarge">
+            <a href="index.html"><i class="fa fa-home" title="Home"></i></a> 
+          </div>
+      </div>
     <h1>Friends Information Form</h1>
       <form id="friendsForm" method="post" action="https://script.google.com/macros/s/AKfycbzVhn6oGIkPYd1-zpLmjW8I6QhGe_30QjpK2SQ4QuftouBXITw6_fuQU3ZPYMtWmtcf/exec" onsubmit="submitForm(event)">
 
